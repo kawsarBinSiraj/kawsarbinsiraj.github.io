@@ -1,2 +1,2 @@
-## kawsarbinsiraj.github.io
-<a href="https://github.com/kawsarBinSiraj" target="_blank" class="text-primary"><strong>https://github.com/kawsarBinSiraj,</strong></a>
+## <a href="kawsarbinsiraj.github.io" target="_blank"><strong>kawsarbinsiraj.github.io</strong></a>
+
