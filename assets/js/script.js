@@ -67,20 +67,7 @@
 
 
 $(document).ready(function () {
-
-    // niceScroll 
-    $("html , body ").niceScroll({
-        scrollspeed: 75,
-        mousescrollstep: 30,
-        cursorwidth: 8,
-        cursorborder: 0,
-        cursorcolor: '#A8A8A8',
-        autohidemode: false,
-        zindex: 99999,
-        horizrailenabled: false,
-        cursorborderradius: 10,
-    });
-
+    
     // toggleClass on menu__handle
     $('.menu__handle').on('click', function () {
         $('#body').toggleClass('stylish', 1000);
