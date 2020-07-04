@@ -74,11 +74,11 @@ $(document).ready(function () {
         mousescrollstep: 30,
         cursorwidth: 8,
         cursorborder: 0,
-        cursorcolor: '#333',
+        cursorcolor: '#A8A8A8',
         autohidemode: false,
         zindex: 99999,
         horizrailenabled: false,
-        cursorborderradius: 0,
+        cursorborderradius: 10,
     });
 
     // toggleClass on menu__handle
