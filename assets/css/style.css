@@ -23,10 +23,7 @@
 :root {
     --main-color: #007bff;
     --subordinate-color: #007bff;
-    /*--gradient : -webkit-linear-gradient(200deg, #007bff 15%, #072DBC 100%);*/
-    /*--gradient : linear-gradient(200deg, #007bff 15%, #072DBC 100%);*/
-    /*--gradient : linear-gradient(130deg, #5124b3 42%, #964ebe 100%);*/
-    /*--gradient : linear-gradient(130deg, #5124b3 32%, #d43f8d 100%);*/
+    --gradient: -webkit-linear-gradient(360deg, #273cc4 0%, #9302f4 100%);
     --gradient: linear-gradient(360deg, #273cc4 0%, #9302f4 100%);
 }
 
