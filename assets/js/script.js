@@ -1,79 +1,80 @@
 
 
 /**
- * @Script js for (kawsarhossain.com)
+ * @Script js for (kawsarbinsiraj.com)
  *
- * @project     - kawsarhossain.com
- * @author      - Kawsar Hossain
- * @created_by  - Kawsar Hossain
+ * @project     - kawsarbinsiraj.com
+ * @author      - kawsarbinsiraj
+ * @created_by  - kawsarbinsiraj
  * @created_at  - 19.03.2018
  * @modified_by -
  */
 
 
 // Use for Main Menu
-(function () {
-    function SVGMenu(el, options) {
-        this.el = el;
-        this.init();
-    }
-    SVGMenu.prototype.init = function () {
-        this.trigger = this.el.querySelector('button.menu__handle');
-        this.shapeEl = this.el.querySelector('div.morph-shape');
+if ($('#menu').length) {
+    (function () {
+        function SVGMenu(el, options) {
+            this.el = el;
+            this.init();
+        }
+        SVGMenu.prototype.init = function () {
+            this.trigger = this.el.querySelector('button.menu__handle');
+            this.shapeEl = this.el.querySelector('div.morph-shape');
 
-        var s = Snap(this.shapeEl.querySelector('svg'));
-        this.pathEl = s.select('path');
-        this.paths = {
-            reset: this.pathEl.attr('d'),
-            open: this.shapeEl.getAttribute('data-morph-open'),
-            close: this.shapeEl.getAttribute('data-morph-close')
+            var s = Snap(this.shapeEl.querySelector('svg'));
+            this.pathEl = s.select('path');
+            this.paths = {
+                reset: this.pathEl.attr('d'),
+                open: this.shapeEl.getAttribute('data-morph-open'),
+                close: this.shapeEl.getAttribute('data-morph-close')
+            };
+
+            this.isOpen = false;
+
+            this.initEvents();
         };
 
-        this.isOpen = false;
+        SVGMenu.prototype.initEvents = function () {
+            this.trigger.addEventListener('click', this.toggle.bind(this));
+        };
 
-        this.initEvents();
-    };
+        SVGMenu.prototype.toggle = function () {
+            var self = this;
 
-    SVGMenu.prototype.initEvents = function () {
-        this.trigger.addEventListener('click', this.toggle.bind(this));
-    };
+            if (this.isOpen) {
+                classie.remove(self.el, 'menu--anim');
+                setTimeout(function () {
+                    classie.remove(self.el, 'menu--open');
+                }, 250);
 
-    SVGMenu.prototype.toggle = function () {
-        var self = this;
+                this.pathEl.stop().animate({ 'path': this.paths.close }, 350, mina.easeout, function () {
+                    self.pathEl.stop().animate({ 'path': self.paths.reset }, 700, mina.elastic);
+                });
+            } else {
+                classie.add(self.el, 'menu--anim');
+                setTimeout(function () {
+                    classie.add(self.el, 'menu--open');
+                }, 250);
 
-        if (this.isOpen) {
-            classie.remove(self.el, 'menu--anim');
-            setTimeout(function () {
-                classie.remove(self.el, 'menu--open');
-            }, 250);
-
-            this.pathEl.stop().animate({'path': this.paths.close}, 350, mina.easeout, function () {
-                self.pathEl.stop().animate({'path': self.paths.reset}, 700, mina.elastic);
-            });
-        } else {
-            classie.add(self.el, 'menu--anim');
-            setTimeout(function () {
-                classie.add(self.el, 'menu--open');
-            }, 250);
-
-            this.pathEl.stop().animate({'path': this.paths.open}, 350, mina.backin, function () {
-                self.pathEl.stop().animate({'path': self.paths.reset}, 700, mina.elastic);
-            });
-        }
-        this.isOpen = !this.isOpen;
-    };
-    new SVGMenu(document.getElementById('menu'));
-})();
+                this.pathEl.stop().animate({ 'path': this.paths.open }, 350, mina.backin, function () {
+                    self.pathEl.stop().animate({ 'path': self.paths.reset }, 700, mina.elastic);
+                });
+            }
+            this.isOpen = !this.isOpen;
+        };
+        new SVGMenu(document.getElementById('menu'));
+    })();
+}
 
 
 $(document).ready(function () {
-    
+
     // toggleClass on menu__handle
     $('.menu__handle').on('click', function () {
         $('#body').toggleClass('stylish', 1000);
         $(this).toggleClass('normal');
     });
-
 
     // Bootstrap Modal Animation
     $(".modal").each(function (l) {
@@ -126,37 +127,41 @@ $(document).ready(function () {
     });
     $(".back-to-top").click(function (e) {
         e.preventDefault();
-        $("html, body").animate({scrollTop: 0}, 600);
+        $("html, body").animate({ scrollTop: 0 }, 600);
     });
 
 
-    // lightcase Initilazations
-    $('a[data-rel^=lightcase]').lightcase();
+    // lightcase Init
+    $(function () {
+        $('a[data-rel^=lightcase]').length ? $('a[data-rel^=lightcase]').lightcase() : null;
+    })
 
     // load more
     $(function () {
-        $("#portfolio .templates_item").slice(0, 16).show();
-        $("#loadMore").on('click', function (e) {
-            e.preventDefault();
-            $("#portfolio .templates_item:hidden").slice(0, 4).slideDown();
-            if ($("#portfolio .templates_item:hidden").length == 0) {
-                $("#loadMore").fadeOut('slow');
-            }
-            $('html,body').animate({
-                scrollTop: $(this).offset().top
-            }, 1500);
-        });
+        if ($('#portfolio').length) {
+            $("#portfolio .templates_item").slice(0, 16).show();
+            $("#loadMore").on('click', function (e) {
+                niceScrollInit();
+                e.preventDefault();
+                $("#portfolio .templates_item:hidden").slice(0, 4).slideDown();
+                if ($("#portfolio .templates_item:hidden").length == 0) {
+                    $("#loadMore").fadeOut('slow');
+                }
+                $('html,body').animate({
+                    scrollTop: $(this).offset().top
+                }, 1500);
+            });
+        }
     });
-    
+
     // bootstrap tooltip 
     $(function () {
-      $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="tooltip"]').length ? $('[data-toggle="tooltip"]').tooltip() : null;
     })
-    
+
     // Responsiveness with JQ
     if ($(window).width() < 576) {
         $('.xsNone').remove();
     }
-
 
 });
