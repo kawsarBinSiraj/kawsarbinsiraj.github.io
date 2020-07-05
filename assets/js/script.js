@@ -141,7 +141,6 @@ $(document).ready(function () {
         if ($('#portfolio').length) {
             $("#portfolio .templates_item").slice(0, 16).show();
             $("#loadMore").on('click', function (e) {
-                niceScrollInit();
                 e.preventDefault();
                 $("#portfolio .templates_item:hidden").slice(0, 4).slideDown();
                 if ($("#portfolio .templates_item:hidden").length == 0) {
