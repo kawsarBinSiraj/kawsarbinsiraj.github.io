@@ -722,8 +722,8 @@ ul.freeProject li>a {
     margin: 0 5px;
     margin-bottom: 10px;
     color: var(--light);
-    -webkit-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .3), 0 4px 0px 0 rgba(0, 0, 0, .1);
-    box-shadow: 0 3px 50px 0 rgba(0, 0, 0, .3), 0 3px 0px 0 rgba(44, 44, 44, .6);
+    -webkit-box-shadow: 0 3px 50px 0 rgba(0, 0, 0, .3), 0 3px 0px 0 rgba(255, 255, 255, .6);
+    box-shadow: 0 3px 50px 0 rgba(0, 0, 0, .3), 0 3px 0px 0 rgba(255, 255, 255, .6);
     -webkit-transition: all .3s;
     transition: all .3s;
 }
