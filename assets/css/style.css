@@ -2770,7 +2770,10 @@ a[title="linkedin"],
 a[data-original-title="linkedin"] {
     background: #0077B5 !important;
 }
-
+a[title="codeply"],
+a[data-original-title="codeply"] {
+    background: #000000 !important;
+}
 
 /**
 ==============================================
