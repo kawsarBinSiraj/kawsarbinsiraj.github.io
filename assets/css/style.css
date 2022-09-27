@@ -2774,6 +2774,11 @@ a[title="codeply"],
 a[data-original-title="codeply"] {
     background: #000000 !important;
 }
+a[title="linkedin"],
+a[data-original-title="linkedin"] {
+    background: #0A66C2 !important;
+}
+
 
 /**
 ==============================================
