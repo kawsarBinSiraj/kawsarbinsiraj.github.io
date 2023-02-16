@@ -387,9 +387,9 @@ body {
 
 #header>.headerbg {
     /* background-image: url(../img/hero-bg-transparent.png); */
-    /* background-image: url(../img/header-img2.png); */
-    background-image: url(https://nx.dev/images/background/waves-background.svg);
-    background-position: center calc(100% - 100px);
+     background-image: url(../img/header-img2.png); */
+    /* background-image: url(https://nx.dev/images/background/waves-background.svg); /*
+    background-position: center bottom;
     background-size: content;
     background-repeat: no-repeat;
     opacity: 1;
