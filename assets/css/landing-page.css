@@ -12,15 +12,18 @@ body {
 }
 
 body {
-    /* font-family: "IBM Plex Mono", monospace; */
-    font-family: "PT Mono", monospace;
+     font-family: "IBM Plex Mono", monospace;
+    /* font-family: "PT Mono", monospace;  */
     font-weight: 400;
-    background: #13192c;
+    background-color: #13192c;
     color: #ffffff;
+    background-image: url(https://nx.dev/images/background/waves-background.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 main {
-    font-size: 1.2rem;
+    font-size: 1.02rem;
 }
 
 main * {
