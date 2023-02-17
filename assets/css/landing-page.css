@@ -1,6 +1,4 @@
 /* Styling for the landing page */
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap");
 html {
     font-size: 14px;
 }
@@ -17,10 +15,24 @@ body {
     font-weight: 400;
     background-color: #13192c;
     color: #ffffff;
-    background-image: url(https://nx.dev/images/background/waves-background.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
+    position: relative;
+     z-index : 10;
 }
+
+body::before{
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-image: url(https://nx.dev/images/background/waves-background.svg); 
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity : .5;
+  z-index : -10;
+}
+
+
 
 main {
     font-size: 1.02rem;
