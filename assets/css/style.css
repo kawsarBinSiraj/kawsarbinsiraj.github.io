@@ -23,8 +23,8 @@
 :root {
     --main-color: #007bff;
     --subordinate-color: #007bff;
-    --gradient: linear-gradient(360deg, #273cc4 0%, #566CEA 100%);
     --gradient: linear-gradient( 110.1deg, rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% );
+    --gradient: linear-gradient(360deg, #273cc4 0%, #566CEA 100%);
 }
 
 * {
