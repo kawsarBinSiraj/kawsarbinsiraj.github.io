@@ -711,14 +711,13 @@ ul.freeProject li {
 }
 
 ul.freeProject li>a {
-    width: 55px;
-    height: 55px;
+    width: 45px;
+    height: 45px;
     display: block;
-    line-height: 55px;
-    font-size: 24px;
+    line-height: 45px;
+    font-size: 20px;
     text-decoration: none;
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
+    border-radius: 2px;
     margin: 0 5px;
     margin-bottom: 10px;
     color: var(--light);
