@@ -2347,7 +2347,7 @@ div.portfoliocard div.follow_count {
 
 h2.textlogo {
     text-transform: capitalize;
-    font-size: calc(2vw + 20px);
+    font-size: calc(3vw + 20px);
     color: #fff;
     font-family: 'Cedarville Cursive', cursive;
     font-weight: 300;
@@ -2395,7 +2395,7 @@ h2.textlogo {
     color: rgba(255, 255, 255, 0.72);
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #footer .copy_right p>a {
