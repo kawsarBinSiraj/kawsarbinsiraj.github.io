@@ -10,8 +10,8 @@ body {
 }
 
 body {
-     font-family: "IBM Plex Mono", monospace;
-    /* font-family: "PT Mono", monospace;  */
+     /* font-family: "IBM Plex Mono", monospace; */
+    font-family: "PT Mono", monospace;  
     font-weight: 400;
     background-color: #13192c;
     color: #ffffff;
@@ -63,18 +63,17 @@ h1 {
     border-left: 1px solid rgba(40, 49, 60, 0.25);
 }
 
-.string {
-    color: #2eccb0;
-}
+
 
 .declaration {
-    color: #9a59c5;
+    color: #e113b5;
 }
 
-a {
+a ,
+.string {
     position: relative;
     text-decoration: none;
-    color: #2eccb0;
+    color: #9eb105f2;
 }
 
 a:hover,
