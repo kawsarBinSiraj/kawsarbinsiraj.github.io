@@ -66,14 +66,14 @@ h1 {
 
 
 .declaration {
-    color: #e113b5;
+    color: #E96479;
 }
 
 a ,
 .string {
     position: relative;
     text-decoration: none;
-    color: #9eb105f2;
+    color: #AACB73;
 }
 
 a:hover,
@@ -101,7 +101,7 @@ a:hover::before {
 }
 
 punctuation {
-    color: #9a59c5;
+    color: #fff;
 }
 
 /*# sourceMappingURL=landingpage.css.map */
