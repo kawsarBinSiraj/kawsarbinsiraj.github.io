@@ -114,21 +114,21 @@ $(document).ready(function () {
     })
 
     // load more
-    $(function () {
-        if ($('#portfolio').length) {
-            $("#portfolio .templates_item").slice(0, 16).show();
-            $("#loadMore").on('click', function (e) {
-                e.preventDefault();
-                $("#portfolio .templates_item:hidden").slice(0, 4).slideDown();
-                if ($("#portfolio .templates_item:hidden").length == 0) {
-                    $("#loadMore").fadeOut('slow');
-                }
-                $('html,body').animate({
-                    scrollTop: $(this).offset().top
-                }, 1500);
-            });
-        }
-    });
+    // $(function () {
+    //     if ($('#portfolio').length) {
+    //         $("#portfolio .templates_item").slice(0, 16).show();
+    //         $("#loadMore").on('click', function (e) {
+    //             e.preventDefault();
+    //             $("#portfolio .templates_item:hidden").slice(0, 4).slideDown();
+    //             if ($("#portfolio .templates_item:hidden").length == 0) {
+    //                 $("#loadMore").fadeOut('slow');
+    //             }
+    //             $('html,body').animate({
+    //                 scrollTop: $(this).offset().top
+    //             }, 1500);
+    //         });
+    //     }
+    // });
 
     // bootstrap tooltip 
     $(function () {
