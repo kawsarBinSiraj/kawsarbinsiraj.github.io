@@ -1754,7 +1754,7 @@ div.portfoliocard div.follow_count {
     background-color: #fbfbfb;
     -webkit-transition: all .3s;
     transition: all .3s;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 25px auto;
     font-family: 'Raleway', sans-serif;
     border: 1px solid rgba(221, 221, 221, 0.5);
 }
