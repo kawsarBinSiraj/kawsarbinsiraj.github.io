@@ -7,12 +7,13 @@ html,
 body {
     margin: 0;
     padding: 0;
+    height : 100%;
 }
 
 body {
     font-family: "PT Mono", monospace;  
     font-weight: 400;
-    background-color: #13192c;
+    background-color: #13192cd6;
     color: #ffffff;
     position: relative;
      z-index : 10;
@@ -24,13 +25,12 @@ body::before{
   height: 100%;
   position: absolute;
   width: 100%;
-  background-image: url(https://nx.dev/images/background/waves-background.svg); 
+  background-image: url(../img/hero-bg-transparent.png); 
   background-repeat: no-repeat;
   background-position: center;
   opacity : .5;
   z-index : -10;
 }
-
 
 
 main {
