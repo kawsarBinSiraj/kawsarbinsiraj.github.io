@@ -13,7 +13,7 @@ body {
 body {
     font-family: "PT Mono", monospace;  
     font-weight: 400;
-    background-color: #13192cd6;
+    background-color: #000000d6;
     color: #ffffff;
     position: relative;
      z-index : 10;
@@ -25,7 +25,8 @@ body::before{
   height: 100%;
   position: absolute;
   width: 100%;
-  background-image: url(../img/hero-bg-transparent.png); 
+  background-image: url(../img/community.svg); 
+  background-image: url(https://react.keepdesign.io/images/home/community.svg);
   background-repeat: no-repeat;
   background-position: center;
   opacity : 1;
