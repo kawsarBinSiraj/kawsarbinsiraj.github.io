@@ -33,7 +33,6 @@ body::before{
   z-index : -10;
 }
 
-
 main {
     font-size: 1.1rem;
     font-weight: 600;
@@ -64,7 +63,9 @@ h1 {
     border-left: 1px solid rgba(40, 49, 60, 0.25);
 }
 
-
+pre { 
+    font-size: .75em;
+}
 
 .declaration {
     color: #E96479;
