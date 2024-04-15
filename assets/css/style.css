@@ -2757,10 +2757,10 @@ a[data-original-title="facebook"] {
     background: #3B579D !important;
 }
 
-a[title="twitter"],
+/* a[title="twitter"],
 a[data-original-title="twitter"] {
     background: #6FAEDC !important;
-}
+} */
 
 a[title="linkedin"],
 a[data-original-title="linkedin"] {
