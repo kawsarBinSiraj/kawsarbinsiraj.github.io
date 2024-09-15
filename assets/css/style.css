@@ -706,27 +706,29 @@ h4.subtitle {
     color: #fff;
 }
 
-ul.freeProject li {
-    margin: 0 .2em;
-}
+/* ul.freeProject li {
+    margin: 0 0em;
+} */
 
 ul.freeProject li>a {
-    width: 50px;
-    height: 50px;
+    width: 40px;
     display: block;
     line-height: 50px;
     font-size: 24px;
     text-decoration: none;
     border-radius: 100%;
-    margin: 0 5px;
+    /* margin: 0 5px; */
     margin-bottom: 10px;
     color: var(--light);
-    -webkit-box-shadow: 0 3px 50px 0 rgba(0, 0, 0, .3), 0 2px 0px 0 rgba(255, 255, 255, .8);
-    box-shadow: 0 3px 50px 0 rgba(0, 0, 0, .3), 0 2px 0px 0 rgba(255, 255, 255, .8);
+    /* -webkit-box-shadow: 0 3px 50px 0 rgba(0, 0, 0, .3), 0 2px 0px 0 rgba(255, 255, 255, .8);
+    box-shadow: 0 3px 50px 0 rgba(0, 0, 0, .3), 0 2px 0px 0 rgba(255, 255, 255, .8); */
     -webkit-transition: all .3s;
     transition: all .3s;
+    background-color: transparent !important;
 }
-
+ul.freeProject li>a > img {
+    max-width: 25px !important;
+}
 .content__container {
     height: 60px;
     padding: 0 40px;
@@ -2371,17 +2373,17 @@ h2.textlogo {
     font-size: 20px;
     -webkit-border-radius: 100%;
     border-radius: 100%;
-    -webkit-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .5), 0 4px 35px 0 rgba(0, 0, 0, .1);
-    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .5), 0 4px 35px 0 rgba(0, 0, 0, .1);
+    /* -webkit-box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .5), 0 4px 35px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 50px 0 rgba(0, 0, 0, .5), 0 4px 35px 0 rgba(0, 0, 0, .1); */
     -webkit-transition: all .3s;
     transition: all .3s;
 }
 
-.social-icons li>a:hover {
+/* .social-icons li>a:hover {
     -webkit-box-shadow: 0 5px 50px 0 rgba(0, 0, 0, .5);
     box-shadow: 0 5px 50px 0 rgba(0, 0, 0, .5);
     opacity: .8;
-}
+} */
 
 #footer .copy_right {
     margin-top: 30px;
@@ -2711,7 +2713,7 @@ h2.textlogo {
     overflow: hidden !important;
 }
 
-
+/* 
 a[title="github"],
 a[data-original-title="github"] {
     background: #1B1F23 !important;
@@ -2757,10 +2759,10 @@ a[data-original-title="facebook"] {
     background: #3B579D !important;
 }
 
-/* a[title="twitter"],
+a[title="twitter"],
 a[data-original-title="twitter"] {
     background: #6FAEDC !important;
-} */
+}
 
 a[title="linkedin"],
 a[data-original-title="linkedin"] {
@@ -2773,7 +2775,7 @@ a[data-original-title="codeply"] {
 a[title="linkedin"],
 a[data-original-title="linkedin"] {
     background: #0A66C2 !important;
-}
+} */
 
 
 /**

@@ -7,34 +7,37 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height : 100%;
+    height: 100%;
 }
 
 body {
-    font-family: "PT Mono", monospace;  
     font-weight: 400;
     background-color: #000000d6;
     color: #ffffff;
     position: relative;
-     z-index : 10;
+    z-index: 10;
 }
 
-body::before{
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  background-image: url(../img/community.svg); 
-  background-image: url(https://react.keepdesign.io/images/home/community.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity : 1;
-  z-index : -10;
+.coding {
+    font-family: "PT Mono", monospace;
+}
+
+body::before {
+    content: "";
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-image: url(../img/community.svg);
+    background-image: url(https://react.keepdesign.io/images/home/community.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+    z-index: -10;
 }
 
 main {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -63,19 +66,19 @@ h1 {
     border-left: 1px solid rgba(40, 49, 60, 0.25);
 }
 
-pre { 
-    font-size: .75em;
+pre {
+    font-size: 0.75em;
 }
 
 .declaration {
-    color: #E96479;
+    color: #e96479;
 }
 
-a ,
+a,
 .string {
     position: relative;
     text-decoration: none;
-    color: #AACB73;
+    color: #aacb73;
 }
 
 a:hover,
@@ -88,3 +91,42 @@ punctuation {
 }
 
 /*# sourceMappingURL=landingpage.css.map */
+
+.contributions .contributed-widget {
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2e2e2e !important;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 6px !important;
+}
+
+.contributed-widget .line {
+    position: absolute;
+    top: -1px;
+    height: 1px;
+    width: 75%;
+    margin: auto;
+    background: linear-gradient(to right, transparent 0%, var(--color) 25%, var(--color) 75%, transparent 100%);
+}
+
+.contributions .col:nth-of-type(1) .contributed-widget {
+    --color: #ff7f50;
+}
+.contributions .col:nth-of-type(2) .contributed-widget {
+    --color: #4dcfae;
+}
+.contributions .col:nth-of-type(3) .contributed-widget {
+    --color: #e977bd;
+}
+.contributions .col:nth-of-type(4) .contributed-widget {
+    --color: #becc14;
+}
+
+.contributions .text-title {
+    color: var(--color);
+    font-weight: 700;
+}
