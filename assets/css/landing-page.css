@@ -74,16 +74,14 @@ pre {
     color: #e96479;
 }
 
-a,
+
 .string {
     position: relative;
     text-decoration: none;
     color: #aacb73;
 }
-
-a:hover,
-a:focus {
-    color: #b9aa1f;
+a {
+    text-decoration: none;
 }
 
 punctuation {
@@ -91,6 +89,25 @@ punctuation {
 }
 
 /*# sourceMappingURL=landingpage.css.map */
+@keyframes lara-chara {
+    0%,
+    100% {
+        transform: rotate(4deg);
+    }
+
+    50% {
+        transform: rotate(-4deg);
+    }
+}
+
+#sign-board {
+    position: absolute;
+    left: 305px;
+    top: 120px;
+    transform-origin: bottom center;
+    transform: rotate(3deg);
+    animation: lara-chara 2s 0s infinite cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 
 .contributions .contributed-widget {
     height: 130px;
@@ -124,6 +141,9 @@ punctuation {
 }
 .contributions .col:nth-of-type(4) .contributed-widget {
     --color: #becc14;
+}
+.contributions .col:nth-of-type(5) .contributed-widget {
+    --color: #c77dff;
 }
 
 .contributions .text-title {
