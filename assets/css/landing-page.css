@@ -71,9 +71,8 @@ pre {
 }
 
 .declaration {
-    color: #e96479;
+    color: #f15bb5;
 }
-
 
 .string {
     position: relative;
@@ -82,6 +81,7 @@ pre {
 }
 a {
     text-decoration: none;
+    color: #f28482 !important;
 }
 
 punctuation {
@@ -119,6 +119,7 @@ punctuation {
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.05);
     border-radius: 6px !important;
+    margin-bottom: 15px;
 }
 
 .contributed-widget .line {
@@ -147,6 +148,9 @@ punctuation {
 }
 
 .contributions .text-title {
-    color: var(--color);
+    color: var(--color) !important;
     font-weight: 700;
+}
+.contributions a {
+    color: #fff !important;
 }
